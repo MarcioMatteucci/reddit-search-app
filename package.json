@@ -1,0 +1,25 @@
+{
+   "name": "reddit-search-app",
+   "version": "1.0.0",
+   "description": "Proyecto en vanilla JavaScript que consume el API de Reddit.",
+   "main": "./src/index.js",
+   "scripts": {
+      "parcel": "parcel ./src/index.html"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MarcioMatteucci/reddit-search-app.git"
+   },
+   "keywords": [
+      "Reddit",
+      "JavaScript",
+      "API",
+      "Vanilla"
+   ],
+   "author": "Marcio Matteucci",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/MarcioMatteucci/reddit-search-app/issues"
+   },
+   "homepage": "https://github.com/MarcioMatteucci/reddit-search-app#readme"
+}
