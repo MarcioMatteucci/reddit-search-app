@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({10:[function(require,module,exports) {
+})({3:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -80,7 +80,7 @@ exports.default = {
       return fetch(`http://www.reddit.com/search.json?q=${term}&sort=${sortBy}&limit=${limit}`).then(res => res.json()).then(data => data.data.children.map(data => data.data)).catch(err => console.error(err));
    }
 };
-},{}],4:[function(require,module,exports) {
+},{}],2:[function(require,module,exports) {
 'use strict';
 
 var _reddit = require('./reddit.api');
@@ -163,7 +163,7 @@ function truncateString(myString, limit) {
    if (shortened == -1) return myString;
    return myString.substring(0, shortened);
 }
-},{"./reddit.api":10}],12:[function(require,module,exports) {
+},{"./reddit.api":3}],4:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -183,7 +183,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '20730' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '26766' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -284,5 +284,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[12,4])
+},{}]},{},[4,2])
 //# sourceMappingURL=/dist/reddit-search-app.map
